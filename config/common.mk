@@ -85,10 +85,13 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    audio_effects.conf \
+    libcyanogen-dsp \
     DSPManager \
     FileManager \
     KLPC2 \
-    LatinIME
+    LatinIME \
+    Trebuchet
 
 # Extra tools
 PRODUCT_PACKAGES += \
