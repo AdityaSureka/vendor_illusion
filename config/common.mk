@@ -12,27 +12,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/slim/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/slim/prebuilt/common/bin/50-slim.sh:system/addon.d/50-slim.sh
+    vendor/illusion/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/illusion/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/illusion/prebuilt/common/bin/50-illusion.sh:system/addon.d/50-illusion.sh
 
-# SLIM-specific init file
+# ILLUSION-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/init.local.rc:root/init.slim.rc
+    vendor/illusion/prebuilt/common/etc/init.local.rc:root/init.illusion.rc
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/illusion/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/slim/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/illusion/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/illusion/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 # Audio Config for DSPManager
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
-#LOCAL SLIM CHANGES  - END
+    vendor/illusion/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+#LOCAL ILLUSION CHANGES  - END
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -40,28 +40,28 @@ PRODUCT_COPY_FILES += \
 
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
-    vendor/slim/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+    vendor/illusion/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
+    vendor/illusion/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/init.d/00slim:system/etc/init.d/00slim \
-    vendor/slim/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/slim/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/slim/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
-    vendor/slim/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/illusion/prebuilt/common/etc/init.d/00illusion:system/etc/init.d/00illusion \
+    vendor/illusion/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
+    vendor/illusion/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/illusion/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
+    vendor/illusion/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/slim/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/slim/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/slim/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+    vendor/illusion/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/illusion/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/illusion/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/illusion/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/illusion/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/illusion/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/illusion/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
 
 # Workaround for NovaLauncher zipalign fails
-PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/illusion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
@@ -85,11 +85,10 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    DashClock \
-    SlimFileManager \
-    SlimCenter \
-    LatinIME \
-    SlimIRC
+    DSPManager \
+    FileManager \
+    KLPC2 \
+    LatinIME
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -98,39 +97,38 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/slim/overlay/dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/slim/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/illusion/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/illusion/overlay/common
 
 # T-Mobile theme engine
-include vendor/slim/config/themes_common.mk
+include vendor/illusion/config/themes_common.mk
 
 # Versioning System
-# Reopen 6.6
 PRODUCT_VERSION_MAJOR = 4.2.2
-PRODUCT_VERSION_MINOR = build
-PRODUCT_VERSION_MAINTENANCE = 6.6
+PRODUCT_VERSION_MINOR = beta
+PRODUCT_VERSION_MAINTENANCE = 1.0
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    slim.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)
+    illusion.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)
 
-ifdef SLIM_WEEKLY
-    SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-WEEKLY
-    SLIM_MOD_VERSION := Slim-$(SLIM_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-WEEKLY
+ifdef ILLUSION_WEEKLY
+    ILLUSION_VERSION := Illusion-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-WEEKLY
+    ILLUSION_MOD_VERSION := Illusion-$(ILLUSION_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-WEEKLY
     PLATFORM_VERSION_CODENAME := WEEKLY
 else
-    ifdef SLIM_RELEASE
-        SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
-        SLIM_MOD_VERSION := Slim-$(SLIM_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
+    ifdef ILLUSION_RELEASE
+        ILLUSION_VERSION := Illusion-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
+        ILLUSION_MOD_VERSION := Illusion-$(ILLUSION_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
         PLATFORM_VERSION_CODENAME := REL
     else
-        SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
-        SLIM_MOD_VERSION := Slim-$(SLIM_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
+        ILLUSION_VERSION := Illusion-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
+        ILLUSION_MOD_VERSION := Illusion-$(ILLUSION_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
         PLATFORM_VERSION_CODENAME := UNOFFICIAL
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.slim.version=$(SLIM_VERSION) \
-    ro.modversion=$(SLIM_MOD_VERSION)
+    ro.slim.version=$(ILLUSION_VERSION) \
+    ro.modversion=$(ILLUSION_MOD_VERSION)
