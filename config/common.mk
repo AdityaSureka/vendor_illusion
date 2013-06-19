@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/illusion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
+# Workaround for NovaLauncher zipalign fails
+PRODUCT_COPY_FILES += \
+    vendor/illusion/prebuilt/common/app/KLPC2.apk:system/app/KLPC2.apk
+
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
 
@@ -108,8 +112,8 @@ include vendor/illusion/config/themes_common.mk
 
 # Versioning System
 PRODUCT_VERSION_MAJOR = 4.2.2
-PRODUCT_VERSION_MINOR = beta
-PRODUCT_VERSION_MAINTENANCE = 1.0
+PRODUCT_VERSION_MINOR = 1.0
+PRODUCT_VERSION_MAINTENANCE = beta
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(BUILD_ID)
 
