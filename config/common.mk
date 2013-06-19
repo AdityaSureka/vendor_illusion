@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     DSPManager \
     FileManager \
+    HALO \
     KLPC2 \
     LatinIME \
     Trebuchet
