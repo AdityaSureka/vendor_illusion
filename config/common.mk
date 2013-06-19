@@ -96,6 +96,7 @@ PRODUCT_PACKAGES += \
     HALO \
     KLPC2 \
     LatinIME \
+    LockClock \
     Trebuchet
 
 # Extra tools
