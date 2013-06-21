@@ -14,7 +14,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/illusion/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/illusion/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/illusion/prebuilt/common/bin/50-illusion.sh:system/addon.d/50-illusion.sh
+    vendor/illusion/prebuilt/common/bin/50-illusion.sh:system/addon.d/50-illusion.sh \
+    vendor/illusion/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
+    vendor/illusion/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
 # ILLUSION-specific init file
 PRODUCT_COPY_FILES += \
