@@ -12,4 +12,6 @@ add_lunch_combo illusion_jfltespr-userdebug
 add_lunch_combo illusion_jfltetmo-userdebug
 add_lunch_combo illusion_jflteusc-userdebug
 add_lunch_combo illusion_jfltevzw-userdebug
+add_lunch_combo illusion_mako-userdebug
+add_lunch_combo illusion_ville-userdebug
 
