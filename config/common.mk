@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
     DSPManager \
     FileManager \
     HALO \
-    KLPC2 \
+    IllusionPapers \
     LatinIME \
     LockClock \
     Trebuchet
