@@ -11,7 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/illusion/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/illusion/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/illusion/prebuilt/common/bin/50-illusion.sh:system/addon.d/50-illusion.sh \
