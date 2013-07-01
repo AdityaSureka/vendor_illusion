@@ -469,7 +469,7 @@
 
 <div class="select-menu js-menu-container js-select-menu" >
   <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
-    data-master-branch="jb4.2"
+    data-master-branch="jb42"
     data-ref="">
     <span class="octicon octicon-git-branch"></span>
     <i>tree:</i>
@@ -511,7 +511,7 @@
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item ">
               <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/IllusionRoms/vendor_illusion/blob/jb4.2/prebuilt/common/bin/99-backup.sh" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="jb4.2" rel="nofollow" title="jb4.2">jb4.2</a>
+              <a href="/IllusionRoms/vendor_illusion/blob/jb42/prebuilt/common/bin/99-backup.sh" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="jb42" rel="nofollow" title="jb42">jb42</a>
             </div> <!-- /.select-menu-item -->
             <div class="select-menu-item js-navigation-item ">
               <span class="select-menu-item-icon octicon octicon-check"></span>
@@ -532,7 +532,7 @@
 
             <div class="select-menu-item js-navigation-item ">
               <span class="select-menu-item-icon octicon octicon-check"></span>
-              <a href="/IllusionRoms/vendor_illusion/blob/jb4.2/prebuilt/common/bin/99-backup.sh" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="jb4.2" rel="nofollow" title="jb4.2">jb4.2</a>
+              <a href="/IllusionRoms/vendor_illusion/blob/jb42/prebuilt/common/bin/99-backup.sh" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="jb42" rel="nofollow" title="jb42">jb42</a>
             </div> <!-- /.select-menu-item -->
         </div>
 
