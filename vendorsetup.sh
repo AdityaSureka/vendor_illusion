@@ -14,4 +14,10 @@ add_lunch_combo illusion_jflteusc-userdebug
 add_lunch_combo illusion_jfltevzw-userdebug
 add_lunch_combo illusion_mako-userdebug
 add_lunch_combo illusion_ville-userdebug
+add_lunch_combo illusion_galaxysmtd-userdebug
+add_lunch_combo illusion_n7000-userdebug
+add_lunch_combo illusion_i9100-userdebug
+add_lunch_combo illusion_n7100-userdebug
+
+
 
