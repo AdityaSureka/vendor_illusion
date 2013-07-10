@@ -65,9 +65,14 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    vendor/illusion/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
-# Workaround for NovaLauncher zipalign fails
+# KLPC
 PRODUCT_COPY_FILES += \
     vendor/illusion/prebuilt/common/app/KLPC3.apk:system/app/KLPC3.apk
+
+# Xposed Stuff
+PRODUCT_COPY_FILES += \
+    vendor/illusion/prebuilt/common/app/AppSettings.apk:system/app/AppSettings.apk \
+    vendor/illusion/prebuilt/common/app/XposedInstaller.apk:system/app/XposedInstaller.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
