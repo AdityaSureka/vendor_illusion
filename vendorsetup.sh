@@ -18,6 +18,15 @@ add_lunch_combo illusion_galaxysmtd-userdebug
 add_lunch_combo illusion_n7000-userdebug
 add_lunch_combo illusion_i9100-userdebug
 add_lunch_combo illusion_n7100-userdebug
-
-
-
+add_lunch_combo illusion_m7ul-userdebug
+add_lunch_combo illusion_m7att-userdebug
+add_lunch_combo illusion_m7tmo-userdebug
+add_lunch_combo illusion_m7spr-userdebug
+add_lunch_combo illusion_crespo-userdebug
+add_lunch_combo illusion_t0lte-userdebug
+add_lunch_combo illusion_t0lteatt-userdebug
+add_lunch_combo illusion_maguro-userdebug
+add_lunch_combo illusion_toro-userdebug
+add_lunch_combo illusion_toroplus-userdebug
+add_lunch_combo illusion_golden-userdebug
+add_lunch_combo illusion_crespo4g-userdebug
